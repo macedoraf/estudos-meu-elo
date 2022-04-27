@@ -1,5 +1,18 @@
 # Projeto de estudos
 
+### Instruções iniciais
+
+Devera ser criada uma branch com o seguinte formato para:
+
+nome-da-funcionalidade/nome-da-alteracao
+
+Ex. tela-de-login/v1
+
+Ao finalizar as mudancas devera ser feita uma solicitação de **PULL REQUEST** com a branch *tela-de-login/v1* com destino para *master*
+
+Apos isso colocar o macedoraf responsável para que ele faça a mesclagem das branchs.
+
+
 ## #1 Praticando orientação de layout e passagem de dados para outra tela 
 
 ### Tela de Login v1
