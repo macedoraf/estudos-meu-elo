@@ -54,3 +54,14 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 ### Tela de Login v3
 
 * In progress *
+
+
+
+## Dicas geráis
+
+Git.
+Comandos mais importantes, git init / git add . / git commit -m "Nome do commit" / git pull / git push
+
+Android.
+
+Componentes utilizados TextView(Label campo descritivo), EditText(Campo de entrada de texto), Acitivty(Tela), Button(Botao rs), Intent(Serve pra navegar pra outra tela), Bundle(Serve pra colocar dentro do Intent e passar informacoes pra outra tela)
