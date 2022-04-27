@@ -60,6 +60,7 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 ## Dicas geráis
 
 Git.
+
 Comandos mais importantes, git init / git add . / git commit -m "Nome do commit" / git pull / git push
 
 Android.
