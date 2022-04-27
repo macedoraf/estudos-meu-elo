@@ -10,7 +10,7 @@ Ex. tela-de-login/v1
 
 Ao finalizar as mudancas devera ser feita uma solicitação de **PULL REQUEST** com a branch *tela-de-login/v1* com destino para *master*
 
-Apos isso colocar o macedoraf responsável para que ele faça a mesclagem das branchs.
+Apos isso colocar o macedoraf responsável(Assignees) para que ele faça a mesclagem das branchs.
 
 obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pull request de exemplo #1"
 
