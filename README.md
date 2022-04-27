@@ -57,7 +57,7 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 
 
 
-## Dicas geráis
+## Dicas gerais
 
 Git.
 
