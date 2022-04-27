@@ -12,6 +12,7 @@ Ao finalizar as mudancas devera ser feita uma solicitação de **PULL REQUEST** 
 
 Apos isso colocar o macedoraf responsável para que ele faça a mesclagem das branchs.
 
+obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pull request de exemplo #1"
 
 ## #1 Praticando orientação de layout e passagem de dados para outra tela 
 
