@@ -26,7 +26,7 @@ Apos isso colocar o macedoraf responsável para que ele faça a mesclagem das br
 - Campo de entrada de texto com a descrição "Campeão mais jogado"
 - Campo de entrada de texto com a descrição "% de vitórias"
 - Botão com o descritivo "Entrar"
-- Ação no botão que redireciona para tela "Peril"
+- Ação no botão que redireciona para tela "Perfil"
 
 ### Tela de Perfil v1
 
