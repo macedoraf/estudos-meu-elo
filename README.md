@@ -27,7 +27,7 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 - Campo de entrada de texto com a descrição "Campeão mais jogado"
 - Campo de entrada de texto com a descrição "% de vitórias"
 - Botão com o descritivo "Entrar"
-- Ação no botão que redireciona para tela "Peril"
+- Ação no botão que redireciona para tela "Perfil"
 
 ### Tela de Perfil v1
 
