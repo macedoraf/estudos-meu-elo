@@ -51,9 +51,12 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 - Os elementos de entrada de dados deverão estar alinhados a esquerda a uma margem de 30 dps.
 - O botão devera estar centralizado ao final do furmulario.\
 
-### Tela de Login v3
+### Tela de Perfil v2
 
-* In progress *
+*Requisitos funcionais:*
+- As informaçoes deverão estar dipostas no seguinte formato [Descricao]: [Valor] Ex. Nome do Invocador: macedoraf
+- Ao representar o elo devera ser exibida a imagem do elo correspondente seguindo da divisao abaixo.
+- Quando a porcentagem de vitórias for < 50% deverá exibir o em verde, quando < 50 vermelho e quando = 50% branco
 
 
 
