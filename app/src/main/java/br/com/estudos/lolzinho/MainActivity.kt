@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("divisao", etDivisao.text.toString())
             myIntent.putExtra("pdl", etPdl.text.toString())
             myIntent.putExtra("campeao", etCampeao.text.toString())
-            myIntent.putExtra("vitorias", etVitorias.text.toString())
+            myIntent.putExtra("vitorias", etVitorias.text.toString().toInt())
             this.startActivity(myIntent)
         })
     }
