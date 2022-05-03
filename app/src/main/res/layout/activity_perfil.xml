@@ -6,57 +6,120 @@
     android:orientation="vertical"
     android:padding="30dp">
 
-    <TextView
-        android:id="@+id/tv_invocador"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Nome de Invocador:"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/tv_elo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Elo:"
-        android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/img_elo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/platina" />
 
     <TextView
         android:id="@+id/tv_divisao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Divisão:"
-        android:textSize="16sp" />
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="I"
+        android:textSize="32sp" />
 
-    <TextView
-        android:id="@+id/tv_pdl"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="PDLs:"
-        android:textSize="16sp" />
+        android:orientation="horizontal"
+        android:padding="8dp">
 
-    <TextView
-        android:id="@+id/tv_campeao"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="8dp"
+            android:text="Nome de Invocador:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_invocador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="8dp"
+            android:text="Nome de Invocador:"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Campeão mais jogado:"
-        android:textSize="16sp" />
+        android:orientation="horizontal"
+        android:padding="8dp">
 
-    <TextView
-        android:id="@+id/tv_vitorias"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="8dp"
+            android:text="PDLs:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_pdl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="8dp"
+            android:text="PDLs:"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="% de vitórias:"
-        android:textSize="16sp" />
+        android:orientation="horizontal"
+        android:padding="8dp">
 
-    <ImageView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="8dp"
+            android:text="Campeão mais jogado:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_campeao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="8dp"
+            android:text="Campeão mais jogado:"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/platina" />
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="8dp"
+            android:text="% de vitórias:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_vitorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="8dp"
+            android:text="% de vitórias:"
+            android:textSize="16sp" />
+
+    </LinearLayout>
 
 </LinearLayout>

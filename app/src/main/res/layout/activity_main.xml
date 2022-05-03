@@ -12,43 +12,43 @@
         android:id="@+id/et_invocador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome de Invocador" />
+        android:hint="Nome de Invocador"/>
 
     <EditText
         android:id="@+id/et_elo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Elo" />
+        android:hint="Elo"/>
 
     <EditText
         android:id="@+id/et_divisao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Divisão" />
+        android:hint="Divisão"/>
 
     <EditText
         android:id="@+id/et_pdl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="PDLs" />
+        android:hint="PDLs"/>
 
     <EditText
         android:id="@+id/et_campeao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Campeão mais jogado" />
+        android:hint="Campeão mais jogado"/>
 
     <EditText
         android:id="@+id/et_vitorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="% de vitórias" />
+        android:hint="% de vitórias"/>
 
     <Button
         android:id="@+id/bt_perfil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
-        android:text="Entrar" />
+        android:text="Entrar"/>
 
 </LinearLayout>
