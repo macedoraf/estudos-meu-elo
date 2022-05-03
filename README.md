@@ -16,7 +16,7 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 
 ## #1 Praticando orientação de layout e passagem de dados para outra tela 
 
-### Tela de Login v1
+### Tela de Login v1 :white_check_mark:
 
 *Requisitos funcionais:*
 - Os campos deverao estar ordenados de **cima para baixo** na ordem em que forem listados abaixo
@@ -29,7 +29,7 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 - Botão com o descritivo "Entrar"
 - Ação no botão que redireciona para tela "Perfil"
 
-### Tela de Perfil v1
+### Tela de Perfil v1 :white_check_mark:
 
 *Requisitos funcionais:*
 
@@ -45,18 +45,24 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 
 ---
 
-### Tela de Login v2
+### Tela de Login v2 :white_check_mark:
 
 *Requisitos funcionais:*
 - Os elementos de entrada de dados deverão estar alinhados a esquerda a uma margem de 30 dps.
 - O botão devera estar centralizado ao final do furmulario.
 
-### Tela de Perfil v2
+### Tela de Perfil v2 :white_check_mark:
 
 *Requisitos funcionais:*
 - As informaçoes deverão estar dipostas no seguinte formato [Descricao]: [Valor] Ex. Nome do Invocador: macedoraf
 - Ao representar o elo devera ser exibida a imagem do elo correspondente seguindo da divisao abaixo.
 - Quando a porcentagem de vitórias for < 50% deverá exibir o em verde, quando < 50 vermelho e quando = 50 branco
+
+
+### Tela de Login v3
+*Requisitos funcionais:*
+- Ao clicar no botao de entrar devera ferificar se algum campo ficou vazio para redirecionar, caso esteja vazio devera exibir uma mensagem de que há campos faltantes a serem preenchidos.
+- Nos campos que só fazem sentido numeros deverá ocorrer uma validacao para que nao seja possivel avancar para a próxima tela caso o campo PDL por exemplo seja inserido uma letra
 
 
 
