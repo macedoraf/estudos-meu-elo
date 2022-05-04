@@ -59,10 +59,14 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 - Quando a porcentagem de vitórias for < 50% deverá exibir o em verde, quando < 50 vermelho e quando = 50 branco
 
 
-### Tela de Login v3
+### Tela de Login v3 :white_check_mark:
 *Requisitos funcionais:*
 - Ao clicar no botao de entrar devera ferificar se algum campo ficou vazio para redirecionar, caso esteja vazio devera exibir uma mensagem de que há campos faltantes a serem preenchidos.
 - Nos campos que só fazem sentido numeros deverá ocorrer uma validacao para que nao seja possivel avancar para a próxima tela caso o campo PDL por exemplo seja inserido uma letra
+
+### Tela de Login v3.1
+*Requisitos funcionais:*
+- Ao clicar no botao de entrar a validacao dos campos devera informar uma lista com os campos faltantes/preenchidos incorretamente.
 
 
 
