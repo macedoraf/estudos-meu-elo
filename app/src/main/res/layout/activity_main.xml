@@ -30,7 +30,8 @@
         android:id="@+id/et_pdl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="PDLs"/>
+        android:hint="PDLs"
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/et_campeao"
@@ -42,7 +43,8 @@
         android:id="@+id/et_vitorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="% de vitórias"/>
+        android:hint="% de vitórias"
+        android:inputType="number"/>
 
     <Button
         android:id="@+id/bt_perfil"
