@@ -72,6 +72,15 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 - Conceitos, pilares, usos.
 - Exemplo prático
 
+Ela é um jeito de programar/construir softwares.
+
+Beneficios:
+- Reusabilidade.
+- Controle de acessos.
+- Padranozação.
+
+
+
 
 
 ## Dicas gerais
