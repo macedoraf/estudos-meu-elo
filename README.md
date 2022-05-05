@@ -68,6 +68,10 @@ obs. na aba pull requests tem um exemplo de como deve ser o resultado final "pul
 *Requisitos funcionais:*
 - Ao clicar no botao de entrar a validacao dos campos devera informar uma lista com os campos faltantes/preenchidos incorretamente.
 
+### Introducao a orientacao objeto:
+- Conceitos, pilares, usos.
+- Exemplo prático
+
 
 
 ## Dicas gerais
