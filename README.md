@@ -80,6 +80,20 @@ Beneficios:
 - Padranozação.
 
 
+Entidades:
+- Elo
+- Invocador
+
+
+Invocador
+ - Nome
+ - % de vitórias
+ - Campeao mais jogado
+ - Elo
+
+Elo
+ - Divisão
+ - PDL
 
 
 
