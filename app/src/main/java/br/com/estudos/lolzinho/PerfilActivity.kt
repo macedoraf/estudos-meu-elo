@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import br.com.estudos.lolzinho.entidades.Invocador
 
 class PerfilActivity : AppCompatActivity() {
     lateinit var invocador: TextView
@@ -23,40 +24,56 @@ class PerfilActivity : AppCompatActivity() {
         vitorias = findViewById(R.id.tv_vitorias)
         emblema = findViewById(R.id.img_elo)
 
-        invocador.text = intent.extras?.getString("invocador")
-        pdl.text = intent.extras?.getString("pdl")
-        divisao.text = intent.extras?.getString("divisao")
-        campeao.text = intent.extras?.getString("campeao")
-        var percentVitorias = intent.extras?.getInt("vitorias") ?: 0
-        var eloDesk = intent.extras?.getString("elo")
+        val entidadeInvocador = intent.extras?.getSerializable("invocador") as Invocador
 
-        if (percentVitorias > 50) {
-            vitorias.setTextColor(resources.getColor(R.color.green))
-        } else if (percentVitorias < 50) {
-            vitorias.setTextColor(resources.getColor(R.color.red))
-        } else {
-            vitorias.setTextColor(resources.getColor(R.color.gray))
+        invocador.text = entidadeInvocador.nome
+        pdl.text = entidadeInvocador.elo.pdls.toString()
+        divisao.text = entidadeInvocador.elo.divisao
+        campeao.text = entidadeInvocador.campeaoMaisJogado
+        var percentVitorias = entidadeInvocador.elo.vitorias
+
+        when {
+            percentVitorias > 50 -> {
+                vitorias.setTextColor(resources.getColor(R.color.green))
+            }
+            percentVitorias < 50 -> {
+                vitorias.setTextColor(resources.getColor(R.color.red))
+            }
+            else -> {
+                vitorias.setTextColor(resources.getColor(R.color.gray))
+            }
         }
         vitorias.text = "${percentVitorias}%"
 
-        if (eloDesk == "ferro" || eloDesk == "Ferro") {
-            emblema.setImageResource(R.drawable.emblem_ferro)
-        } else if (eloDesk == "bronze" || eloDesk == "Bronze") {
-            emblema.setImageResource(R.drawable.emblem_bronze)
-        } else if (eloDesk == "prata" || eloDesk == "Prata") {
-            emblema.setImageResource(R.drawable.emblem_silver)
-        } else if (eloDesk == "ouro" || eloDesk == "Ouro") {
-            emblema.setImageResource(R.drawable.emblem_gold)
-        } else if (eloDesk == "platina" || eloDesk == "Platina") {
-            emblema.setImageResource(R.drawable.emblem_platinum)
-        } else if (eloDesk == "diamante" || eloDesk == "Diamante") {
-            emblema.setImageResource(R.drawable.emblem_diamond)
-        } else if (eloDesk == "mestre" || eloDesk == "Mestre") {
-            emblema.setImageResource(R.drawable.emblem_master)
-        } else if (eloDesk == "grao mestre" || eloDesk == "Grao Mestre") {
-            emblema.setImageResource(R.drawable.emblem_grandmaster)
-        } else if (eloDesk == "desafiante" || eloDesk == "Desafiante") {
-            emblema.setImageResource(R.drawable.emblem_challenger)
+        when (entidadeInvocador.elo.nome) {
+            "ferro", "Ferro" -> {
+                emblema.setImageResource(R.drawable.emblem_ferro)
+            }
+            "bronze", "Bronze" -> {
+                emblema.setImageResource(R.drawable.emblem_bronze)
+            }
+            "prata", "Prata" -> {
+                emblema.setImageResource(R.drawable.emblem_silver)
+            }
+            "ouro", "Ouro" -> {
+                emblema.setImageResource(R.drawable.emblem_gold)
+            }
+            "platina", "Platina" -> {
+                emblema.setImageResource(R.drawable.emblem_platinum)
+            }
+            "diamante", "Diamante" -> {
+                emblema.setImageResource(R.drawable.emblem_diamond)
+            }
+            "mestre", "Mestre" -> {
+                emblema.setImageResource(R.drawable.emblem_master)
+            }
+            "grao mestre", "Grao Mestre" -> {
+                emblema.setImageResource(R.drawable.emblem_grandmaster)
+            }
+            "desafiante", "Desafiante" -> {
+                emblema.setImageResource(R.drawable.emblem_challenger)
+            }
+            else -> {}
         }
     }
 }
