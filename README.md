@@ -96,6 +96,10 @@ Elo
  - PDL
 
 
+### Criando a classe Invocador e Elo
+
+- Devera ser usado a classe invocador para passar os dados de uma tela para outra
+
 
 ## Dicas gerais
 
