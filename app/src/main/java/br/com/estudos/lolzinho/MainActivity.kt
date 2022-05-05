@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import br.com.estudos.lolzinho.entidades.Elo
+import br.com.estudos.lolzinho.entidades.Invocador
 import java.time.Duration
 
 class MainActivity : AppCompatActivity() {
@@ -40,8 +42,8 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    fun adicionaTexto(param:String){
-        if (textoDeErro == ""){
+    fun adicionaTexto(param: String) {
+        if (textoDeErro == "") {
             textoDeErro += param
         } else {
             textoDeErro += "\n" + param
@@ -81,13 +83,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun navegaParaOutraTela() {
+        val nomeDoInvocador = etInvocador.text.toString()
+        val nomeDoCampeaoMaisJogado = etCampeao.text.toString()
+        val nomeDoElo = etElo.text.toString()
+        val nomeDaDivisao = etDivisao.text.toString()
+        val quantidadeDePdls = etPdl.text.toString().toInt()
+        val quantidadeDeVitorias = etVitorias.text.toString().toFloat()
+        val elo = Elo(nomeDoElo, nomeDaDivisao, quantidadeDePdls, quantidadeDeVitorias)
+        val invocador = Invocador(nomeDoInvocador, nomeDoCampeaoMaisJogado, elo)
+
         val myIntent = Intent(this, PerfilActivity::class.java)
-        myIntent.putExtra("invocador", etInvocador.text.toString())
-        myIntent.putExtra("elo", etElo.text.toString())
-        myIntent.putExtra("divisao", etDivisao.text.toString())
-        myIntent.putExtra("pdl", etPdl.text.toString())
-        myIntent.putExtra("campeao", etCampeao.text.toString())
-        myIntent.putExtra("vitorias", etVitorias.text.toString().toInt())
+        myIntent.putExtra("invocador", invocador)
         this.startActivity(myIntent)
     }
 

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import br.com.estudos.lolzinho.entidades.Invocador
 
 class PerfilActivity : AppCompatActivity() {
     lateinit var invocador: TextView
@@ -23,12 +24,14 @@ class PerfilActivity : AppCompatActivity() {
         vitorias = findViewById(R.id.tv_vitorias)
         emblema = findViewById(R.id.img_elo)
 
-        invocador.text = intent.extras?.getString("invocador")
-        pdl.text = intent.extras?.getString("pdl")
-        divisao.text = intent.extras?.getString("divisao")
-        campeao.text = intent.extras?.getString("campeao")
-        var percentVitorias = intent.extras?.getInt("vitorias") ?: 0
-        var eloDesk = intent.extras?.getString("elo")
+        val entidadeInvocador = intent.extras?.getSerializable("invocador") as Invocador
+
+        invocador.text = entidadeInvocador.nome
+        pdl.text = entidadeInvocador.elo.pdls.toString()
+        divisao.text = entidadeInvocador.elo.divisao
+        campeao.text = entidadeInvocador.capeaoMaisJogado
+        var percentVitorias = entidadeInvocador.elo.vitorias
+        var eloDesk = entidadeInvocador.elo.nome
 
         if (percentVitorias > 50) {
             vitorias.setTextColor(resources.getColor(R.color.green))

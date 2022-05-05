@@ -11,7 +11,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@drawable/platina" />
+        tools:src="@drawable/platina" />
 
     <TextView
         android:id="@+id/tv_divisao"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="I"
+        tools:text="I"
         android:textSize="32sp" />
 
     <LinearLayout
