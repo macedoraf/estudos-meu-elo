@@ -3,17 +3,16 @@ package br.com.estudos.lolzinho
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import java.time.Duration
+import br.com.estudos.lolzinho.entidades.Elo
+import br.com.estudos.lolzinho.entidades.Invocador
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var btnEntrar: Button
     lateinit var etInvocador: TextView
-    lateinit var etElo: TextView
+    lateinit var spElo: Spinner
     lateinit var etDivisao: TextView
     lateinit var etPdl: TextView
     lateinit var etCampeao: TextView
@@ -25,12 +24,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         btnEntrar = findViewById(R.id.bt_perfil)
         etInvocador = findViewById(R.id.et_invocador)
-        etElo = findViewById(R.id.et_elo)
+        spElo = findViewById(R.id.sp_elo)
         etDivisao = findViewById(R.id.et_divisao)
         etPdl = findViewById(R.id.et_pdl)
         etCampeao = findViewById(R.id.et_campeao)
         etVitorias = findViewById(R.id.et_vitorias)
 
+        realizaConfiguracao()
+
+    }
+
+    private fun realizaConfiguracao() {
         btnEntrar.setOnClickListener(View.OnClickListener {
             if (osCamposSaoValidos()) {
                 navegaParaOutraTela()
@@ -38,10 +42,18 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this.baseContext, "$textoDeErro", Toast.LENGTH_LONG).show()
             }
         })
+
+        spElo.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, arrayOf(
+            "Ferro", "Bronze",
+            "Prata", "Ouro",
+            "Platina", "Diamante",
+            "Mestre", "Grão-Mestre",
+            "Desafiante"
+        ))
     }
 
-    fun adicionaTexto(param:String){
-        if (textoDeErro == ""){
+    fun adicionaTexto(param: String) {
+        if (textoDeErro == "") {
             textoDeErro += param
         } else {
             textoDeErro += "\n" + param
@@ -52,7 +64,6 @@ class MainActivity : AppCompatActivity() {
 
         textoDeErro = ""
         var nomeDoInvocador = etInvocador.text.toString()
-        var elo = etElo.text.toString()
         var divisao = etDivisao.text.toString()
         var pdl = etPdl.text.toString()
         var campeao = etCampeao.text.toString()
@@ -61,9 +72,7 @@ class MainActivity : AppCompatActivity() {
         if (nomeDoInvocador == "") {
             adicionaTexto("Nome de invocador inválido")
         }
-        if (elo == "") {
-            adicionaTexto("Elo inválido")
-        }
+
         if (divisao == "") {
             adicionaTexto("Divisão inválida")
         }
@@ -81,13 +90,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun navegaParaOutraTela() {
+        val nomeDoInvocador = etInvocador.text.toString()
+        val nomeDoCampeaoMaisJogado = etCampeao.text.toString()
+        val nomeDaDivisao = etDivisao.text.toString()
+        val quantidadeDePdls = etPdl.text.toString().toInt()
+        val quantidadeDeVitorias = etVitorias.text.toString().toFloat()
+        val elo = Elo("", nomeDaDivisao, quantidadeDePdls, quantidadeDeVitorias)
+        val invocador = Invocador(nomeDoInvocador, nomeDoCampeaoMaisJogado, elo)
+
         val myIntent = Intent(this, PerfilActivity::class.java)
-        myIntent.putExtra("invocador", etInvocador.text.toString())
-        myIntent.putExtra("elo", etElo.text.toString())
-        myIntent.putExtra("divisao", etDivisao.text.toString())
-        myIntent.putExtra("pdl", etPdl.text.toString())
-        myIntent.putExtra("campeao", etCampeao.text.toString())
-        myIntent.putExtra("vitorias", etVitorias.text.toString().toInt())
+        myIntent.putExtra("invocador", invocador)
         this.startActivity(myIntent)
     }
 
