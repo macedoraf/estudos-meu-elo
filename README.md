@@ -96,7 +96,7 @@ Elo
  - PDL
 
 
-### Criando a classe Invocador e Elo
+### Criando a classe Invocador e Elo :white_check_mark:
 
 - Devera ser usado a classe invocador para passar os dados de uma tela para outra
 
