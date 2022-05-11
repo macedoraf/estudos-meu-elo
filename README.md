@@ -100,7 +100,7 @@ Elo
 
 - Devera ser usado a classe invocador para passar os dados de uma tela para outra
 
-### Tela de Login v4
+### Tela de Login v4 :white_check_mark:
 *Requisitos funcionais:*
 - Ao invés de escrever o nome do elo deverá aparecer um dropdown com as opcões disponíveis
 - Ao invés de escrever o numero da visião deverá aparecer um dropdown com as opcões disponíveis
