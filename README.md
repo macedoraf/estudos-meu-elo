@@ -107,6 +107,82 @@ Elo
 - Quando for selecionado a divisão Mestre/Grau Mestre/Desafiante o campo de divisão deverá ser desabilidato
 
 
+
+### Buscando os dados a partir do site/api da riot
+
+Qual informaçoes gostariamos de buscar?
+
+### Buscando Dados v1
+
+Input Nome do invocador
+
+output Ranked Solo/Duo da Season atual:
+    - Elo
+    - Divisao
+    - Campeao mais jogado
+    - % de vitórias
+
+APIs para chamar:
+
+Host: br1.api.riotgames.com
+
+Champions: http://ddragon.leagueoflegends.com/cdn/12.9.1/data/en_US/champion.json
+
+Champion icon: http://ddragon.leagueoflegends.com/cdn/12.9.1/img/champion/{ChampionName}.png
+
+Summoner ID : {host}/lol/summoner/v4/summoners/by-name/{summonerName}
+    Example:
+
+    {
+        "id": "Q1OkZqB0qgirDh_t-aRv6hrlBAK7oc5od95YiLArWeLZ", <- encrypted summonet ID
+        "accountId": "Ko1tCXg28E82C26Q4q3Xj4uOVB1qyGTzqMVU6vc7odg", // Numero da conta criptografado
+        "puuid": "xjSHUXHG9Kh6TR-IVzwcGYzy80v6-IQESUk0L6psfAU-wDbmb9xyCpODHCqLnxZYD5gu-YqHVtylOw",
+        "name": "macedoraf",
+        "profileIconId": 518,
+        "revisionDate": 1652211503000,
+        "summonerLevel": 305
+    }
+
+Summoner Ranked info: {host} /lol/league/v4/entries/by-summoner/{summonerId}
+
+    Example:
+
+    [
+        {
+            "leagueId": "1a8c1177-bdc0-439f-b618-ad6b23ecc133",
+            "queueType": "RANKED_SOLO_5x5",
+            "tier": "PLATINUM",
+            "rank": "IV",
+            "summonerId": "Q1OkZqB0qgirDh_t-aRv6hrlBAK7oc5od95YiLArWeLZ",
+            "summonerName": "macedoraf",
+            "leaguePoints": 75,
+            "wins": 108,
+            "losses": 96,
+            "veteran": false,
+            "inactive": false,
+            "freshBlood": false,
+            "hotStreak": false
+        },
+        {
+            "leagueId": "9fb74c30-1e7c-4180-90a5-46208293e100",
+            "queueType": "RANKED_FLEX_SR",
+            "tier": "GOLD",
+            "rank": "IV",
+            "summonerId": "Q1OkZqB0qgirDh_t-aRv6hrlBAK7oc5od95YiLArWeLZ",
+            "summonerName": "macedoraf",
+            "leaguePoints": 45,
+            "wins": 16,
+            "losses": 14,
+            "veteran": false,
+            "inactive": false,
+            "freshBlood": false,
+            "hotStreak": false
+        }
+    ]
+
+
+
+
 ## Dicas gerais
 
 Git.
