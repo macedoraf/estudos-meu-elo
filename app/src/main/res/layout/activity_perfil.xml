@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +12,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        tools:src="@drawable/platina" />
+        tools:src="@drawable/emblem_challenger" />
 
     <TextView
         android:id="@+id/tv_divisao"
@@ -108,7 +109,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:padding="8dp"
-            android:text="% de vitórias:"
+            android:text="Vitórias:"
             android:textSize="16sp" />
 
         <TextView
@@ -121,5 +122,55 @@
             android:textSize="16sp" />
 
     </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/id_position_mid"
+            android:layout_width="@dimen/tamanho_position_lane"
+            android:layout_height="@dimen/tamanho_position_lane"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/position_mid_challengerr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/id_position_jg"
+            android:layout_width="@dimen/tamanho_position_lane"
+            android:layout_height="@dimen/tamanho_position_lane"
+            android:src="@drawable/position_jungle_challenger"
+            app:layout_constraintEnd_toStartOf="@id/id_position_mid"
+            app:layout_constraintTop_toBottomOf="@id/id_position_mid" />
+
+        <ImageView
+            android:id="@+id/id_position_bot"
+            android:layout_width="@dimen/tamanho_position_lane"
+            android:layout_height="@dimen/tamanho_position_lane"
+            android:src="@drawable/position_bot_challenger"
+            app:layout_constraintStart_toEndOf="@id/id_position_mid"
+            app:layout_constraintTop_toBottomOf="@id/id_position_mid" />
+
+        <ImageView
+            android:id="@+id/id_position_top"
+            android:layout_width="@dimen/tamanho_position_lane"
+            android:layout_height="@dimen/tamanho_position_lane"
+            android:src="@drawable/position_top_challenger"
+            app:layout_constraintEnd_toStartOf="@id/id_position_jg"
+            app:layout_constraintTop_toBottomOf="@id/id_position_jg" />
+
+        <ImageView
+            android:id="@+id/id_position_sup"
+            android:layout_width="@dimen/tamanho_position_lane"
+            android:layout_height="@dimen/tamanho_position_lane"
+            android:src="@drawable/position_sup_challenger"
+            app:layout_constraintStart_toEndOf="@id/id_position_bot"
+            app:layout_constraintTop_toBottomOf="@id/id_position_bot" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
