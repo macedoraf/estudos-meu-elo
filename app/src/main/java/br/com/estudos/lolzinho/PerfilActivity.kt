@@ -46,34 +46,35 @@ class PerfilActivity : AppCompatActivity() {
         vitorias.text = "${percentVitorias}%"
 
         when (entidadeInvocador.elo.nome) {
-            "ferro", "Ferro" -> {
+            TEXTO_FERRO -> {
                 emblema.setImageResource(R.drawable.emblem_ferro)
             }
-            "bronze", "Bronze" -> {
+            TEXTO_BRONZE -> {
                 emblema.setImageResource(R.drawable.emblem_bronze)
             }
-            "prata", "Prata" -> {
+            TEXTO_PRATA -> {
                 emblema.setImageResource(R.drawable.emblem_silver)
             }
-            "ouro", "Ouro" -> {
+            TEXTO_OURO -> {
                 emblema.setImageResource(R.drawable.emblem_gold)
             }
-            "platina", "Platina" -> {
+            TEXTO_PLATINA -> {
                 emblema.setImageResource(R.drawable.emblem_platinum)
             }
-            "diamante", "Diamante" -> {
+            TEXTO_DIAMENTE -> {
                 emblema.setImageResource(R.drawable.emblem_diamond)
             }
-            "mestre", "Mestre" -> {
+            TEXTO_MESTRE -> {
                 emblema.setImageResource(R.drawable.emblem_master)
             }
-            "grao mestre", "Grao Mestre" -> {
+            TEXTO_GMESTRE -> {
                 emblema.setImageResource(R.drawable.emblem_grandmaster)
             }
-            "desafiante", "Desafiante" -> {
+            TEXTO_DESAFIANTE -> {
                 emblema.setImageResource(R.drawable.emblem_challenger)
             }
-            else -> {}
+            else -> {
+            }
         }
     }
 }
