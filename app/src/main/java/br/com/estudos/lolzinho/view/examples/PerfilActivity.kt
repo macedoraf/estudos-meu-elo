@@ -1,4 +1,4 @@
-package br.com.estudos.lolzinho.view
+package br.com.estudos.lolzinho.view.examples
 
 import android.os.Bundle
 import android.widget.ImageView

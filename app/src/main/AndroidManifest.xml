@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
 
-        <activity android:name=".view.PerfilActivity" />
-        <activity android:name=".view.MainActivity"/>
+        <activity android:name=".view.examples.PerfilActivity" />
+        <activity android:name=".view.examples.MainActivity"/>
+        <activity android:name=".view.RankedInfoActivity"/>
 
         <activity
             android:name=".view.LoginActivity"

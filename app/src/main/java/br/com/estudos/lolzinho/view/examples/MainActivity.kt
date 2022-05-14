@@ -1,4 +1,4 @@
-package br.com.estudos.lolzinho.view
+package br.com.estudos.lolzinho.view.examples
 
 import android.content.Intent
 import android.os.Bundle
