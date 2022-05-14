@@ -1,10 +1,11 @@
-package br.com.estudos.lolzinho
+package br.com.estudos.lolzinho.view
 
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import br.com.estudos.lolzinho.entidades.Invocador
+import br.com.estudos.lolzinho.*
+import br.com.estudos.lolzinho.model.entidades.Invocador
 
 class PerfilActivity : AppCompatActivity() {
     lateinit var invocador: TextView
