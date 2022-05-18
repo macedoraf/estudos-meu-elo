@@ -181,9 +181,14 @@ Summoner Ranked info: {host} /lol/league/v4/entries/by-summoner/{summonerId}
     ]
 
 
+### Tela de RankedInfo v1
+
+Construir conforme prototipo
+
 
 
 ## Dicas gerais
+![prototipo_01 drawio](https://user-images.githubusercontent.com/21695431/169083282-1c9a5c54-5d59-4496-ad05-e8c682ae9754.svg)
 
 Git.
 
