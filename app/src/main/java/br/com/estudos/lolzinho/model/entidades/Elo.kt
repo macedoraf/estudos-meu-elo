@@ -1,4 +1,4 @@
-package br.com.estudos.lolzinho.entidades
+package br.com.estudos.lolzinho.model.entidades
 
 import java.io.Serializable
 

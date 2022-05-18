@@ -1,4 +1,4 @@
-package br.com.estudos.lolzinho
+package br.com.estudos.lolzinho.view.examples
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,9 @@ import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import br.com.estudos.lolzinho.entidades.Elo
-import br.com.estudos.lolzinho.entidades.Invocador
+import br.com.estudos.lolzinho.*
+import br.com.estudos.lolzinho.model.entidades.Elo
+import br.com.estudos.lolzinho.model.entidades.Invocador
 
 class MainActivity : AppCompatActivity() {
 
