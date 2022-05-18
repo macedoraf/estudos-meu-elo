@@ -185,10 +185,12 @@ Summoner Ranked info: {host} /lol/league/v4/entries/by-summoner/{summonerId}
 
 Construir conforme prototipo
 
+![prototipo_01_rankedinfo](https://user-images.githubusercontent.com/21695431/169083454-942baedf-cfc3-4844-854c-27c7b5024e77.png)
+
+
 
 
 ## Dicas gerais
-![prototipo_01 drawio](https://user-images.githubusercontent.com/21695431/169083282-1c9a5c54-5d59-4496-ad05-e8c682ae9754.svg)
 
 Git.
 
