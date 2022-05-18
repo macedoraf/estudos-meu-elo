@@ -12,7 +12,7 @@ class RiotAPI(
 ) {
 
     companion object {
-        private const val API_KEY: String = "RGAPI-1f355d99-0edb-4184-88c3-87eea5dee576"
+        private const val API_KEY: String = "RGAPI-b574926d-2bc5-49b5-8183-b16b885baec8"
         private const val X_RIOT_TOKEN_KEY = "X-Riot-Token"
         private const val HOST_URL = "https://br1.api.riotgames.com"
         private const val APPLICATION_JSON = "application/json"
