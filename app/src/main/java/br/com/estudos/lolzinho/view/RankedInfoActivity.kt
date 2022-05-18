@@ -18,7 +18,7 @@ class RankedInfoActivity : AppCompatActivity() {
     }
 
     private fun setupListeners() {
-        TODO("Not yet implemented")
+
     }
 
 
